@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #FFEFBA 0%, #FFFFFF 100%);
+  background-repeat: no-repeat;
+}
+#header{
+    position: fixed;
+  
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.logo-img a{
+    text-decoration: none;
+    color: black;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li {
+list-style: none;
+padding: 3px 15px 3px 15px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#btn a{
+    background-color: orange;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 3px 15px 3px 15px;
+    border: 1px solid brown;
+    border-radius: 20px;
+}
+#robots{
+    display: flex;
+    padding-top: 150px;
+}
+#head-para-btn{
+    padding-top: 80px;
+}
+.heading1{
+padding-left: 80px;
+padding-top: 100px;
+width: 230px;
+}
+.para{
+    padding-top: 40px;
+    padding-left: 80px;
+}
+.btn2{
+    padding-top: 40px;
+    padding-left: 80px;
+   
+    
+}
+.btn2 a{
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+.picture img{
+   
+}
+
+
+/************************* mobile menu *****************/
+#mobile_menu {
+    display: none;
+    line-height: 40px;
+    
+    background: magenta;
+}
+#mobile_menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+#mobile_menu ul li {
+    list-style: none;
+    padding: 0px 5px 0px 5px;
+}
+
+#mobile_menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/********************* media quries **********************/
+@media screen and (max-width: 768px) {
+    
+   
+    #mobile_menu {
+        display: block;
+        width: 100%;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+
+    html {
+        font-size: 70%;
+      
+    }
+    #robots .picture img{
+       
+        padding-top: 100px;
+        width: 300px;
+    }
+   
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 50%;
+    }
+ 
+}
+
+ @media screen and (max-width: 320px) {
+    html {
+        font-size: 90%;
+        width: 100%;
+    }
+    #mobile_menu{
+        width: 100%;
+    }
+    #robots {
+       
+        flex-wrap: wrap;
+    }
+    #robots .picture img{
+        padding-left: 60px;
+        padding-top: 30px;
+        width: 150px;
+    }
+    
+} 
+
